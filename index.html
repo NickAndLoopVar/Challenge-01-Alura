@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./script/script.js"></script>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Encriptador Challenge One</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.aluracursos.com/">
+                <img class="logo" src="./img/Logo.svg" alt="Logo" />
+            </a>
+        </header>
+        <main>
+            <div class="container__main">
+                <div class="left">
+                    <textarea
+                        id="text__in"
+                        class="text__in"
+                        cols="0"
+                        rows="13"
+                        placeholder="Ingrese el texto aquí"
+                    ></textarea>
+                    <section class="alert">
+                        <img src="./img/alerta.svg" alt="alerta" />
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </section>
+                    <section class="buttons">
+                        <input
+                            type="button"
+                            value="Encriptar"
+                            class="btn__encriptar"
+                            onclick="esconderNingunmensaje(); btn__encriptar();"
+                        />
+                        <input
+                            type="button"
+                            value="Desincriptar"
+                            class="btn__desencriptar"
+                            onclick="esconderNingunmensaje(); btn__desencriptar()"
+                        />
+                    </section>
+                </div>
+                <section class="info" id="info">
+                    <img
+                        src="./img/Personaje.svg"
+                        alt="Personaje"
+                        class="character"
+                    />
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </section>
+                <section class="execute" id="execute">
+                    <textarea
+                        id="textExecute"
+                        name="texto"
+                        cols="0"
+                        rows="15"
+                        readonly
+                        class="text__out"
+                    ></textarea>
+                    <input
+                        type="button"
+                        value="Copiar"
+                        class="btn__copy"
+                        onclick="copyText();"
+                    />
+                </section>
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/NickAndLoopVar" target="_blank"
+                ><img src="./img/github.png" alt="github"
+            /></a>
+            <p class="copyright">
+                &#169;Alura | Creado por Nicolás López | 2023
+            </p>
+        </footer>
+    </body>
+</html>
